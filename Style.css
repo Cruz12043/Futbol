@@ -1,0 +1,2138 @@
+/*====================================================
+CRUZ JERSEY JALAPA TAB
+STYLE.CSS - PARTE 1
+======================================================*/
+
+/*=========================
+GOOGLE FONT
+=========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================
+VARIABLES
+=========================*/
+
+:root{
+
+    --negro:#111111;
+    --grisOscuro:#1b1b1b;
+    --gris:#2c2c2c;
+    --grisClaro:#ececec;
+
+    --blanco:#ffffff;
+
+    --rojo:#e30613;
+
+    --verde:#25D366;
+
+    --sombra:0 12px 30px rgba(0,0,0,.15);
+
+    --radio:16px;
+
+    --transicion:.35s;
+
+}
+
+/*=========================
+RESET
+=========================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f7f7f7;
+
+    color:#222;
+
+    overflow-x:hidden;
+
+}
+
+/*=========================
+SCROLLBAR
+=========================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#111;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#444;
+
+}
+
+/*=========================
+LINKS
+=========================*/
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/*=========================
+HEADER
+=========================*/
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:85px;
+
+    background:rgba(17,17,17,.96);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 7%;
+
+    z-index:9999;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+
+}
+
+.logo{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+}
+
+.logo span{
+
+    color:var(--rojo);
+
+}
+
+/*=========================
+MENU
+=========================*/
+
+nav ul{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+nav ul li a{
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:var(--transicion);
+
+}
+
+nav ul li a:hover{
+
+    color:var(--rojo);
+
+}
+
+/*=========================
+BOTON HEADER
+=========================*/
+
+.btnHeader{
+
+    background:var(--verde);
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transicion);
+
+}
+
+.btnHeader:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(37,211,102,.35);
+
+}
+
+/*=========================
+HERO
+=========================*/
+
+.hero{
+
+    height:100vh;
+
+    background:url("img/banner.jpg") center center/cover;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.60);
+
+}
+
+.contenidoHero{
+
+    position:relative;
+
+    z-index:10;
+
+    color:white;
+
+    width:90%;
+
+    max-width:900px;
+
+}
+
+.contenidoHero h1{
+
+    font-size:68px;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.contenidoHero p{
+
+    font-size:22px;
+
+    color:#ddd;
+
+    margin-bottom:40px;
+
+}
+
+/*=========================
+BOTONES HERO
+=========================*/
+
+.botonesHero{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btnPrincipal{
+
+    background:var(--rojo);
+
+    color:white;
+
+    padding:16px 35px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:var(--transicion);
+
+}
+
+.btnPrincipal:hover{
+
+    transform:translateY(-4px);
+
+    background:#b8000c;
+
+}
+
+.btnSecundario{
+
+    border:2px solid white;
+
+    color:white;
+
+    padding:16px 35px;
+
+    border-radius:50px;
+
+    transition:var(--transicion);
+
+}
+
+.btnSecundario:hover{
+
+    background:white;
+
+    color:black;
+
+}
+
+/*=========================
+BUSCADOR
+=========================*/
+
+.buscador{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:90px auto 40px;
+
+    text-align:center;
+
+}
+
+.buscador h2{
+
+    font-size:38px;
+
+    margin-bottom:30px;
+
+}
+
+#buscar{
+
+    width:100%;
+
+    max-width:700px;
+
+    padding:18px 22px;
+
+    border:none;
+
+    border-radius:50px;
+
+    box-shadow:var(--sombra);
+
+    font-size:17px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+#buscar:focus{
+
+    transform:scale(1.02);
+
+}
+
+/*=========================
+CATEGORIAS
+=========================*/
+
+.categorias{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:70px;
+
+}
+
+.categorias button{
+
+    border:none;
+
+    background:white;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    box-shadow:var(--sombra);
+
+    transition:var(--transicion);
+
+}
+
+.categorias button:hover{
+
+    background:var(--rojo);
+
+    color:white;
+
+}
+
+.categorias .activo{
+
+    background:var(--rojo);
+
+    color:white;
+
+}
+
+/*=========================
+TITULOS
+=========================*/
+
+.tituloSeccion{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.tituloSeccion h2{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+
+.tituloSeccion p{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+.tituloSeccion h3{
+
+    margin-top:20px;
+
+    color:var(--rojo);
+
+    font-size:30px;
+
+}
+/* ================================
+   PRODUCTOS PREMIUM
+================================ */
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 40px 8%;
+}
+
+
+.product-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+
+
+/* Imagen producto */
+
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+
+.product-card:hover img {
+    transform: scale(1.08);
+}
+
+
+
+/* Información producto */
+
+.product-info {
+    padding: 20px;
+}
+
+
+.product-info h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+.product-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+
+/* Precio */
+
+.price {
+    font-size: 22px;
+    font-weight: 900;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+
+.price span {
+    color: #e63946;
+}
+
+
+
+/* Botón comprar */
+
+.buy-btn {
+
+    display: inline-block;
+    background: #000;
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+
+.buy-btn:hover {
+
+    background: #e63946;
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* ================================
+   ETIQUETA PREMIUM
+================================ */
+
+
+.premium-tag {
+
+    position:absolute;
+
+    top:15px;
+
+    left:15px;
+
+    background:#000;
+
+    color:white;
+
+    padding:7px 15px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+
+
+.new-tag {
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    background:#e63946;
+
+    color:white;
+
+    padding:7px 15px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+/* ================================
+   CATEGORIAS
+================================ */
+
+
+.categories {
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.categories h2 {
+
+    font-size:40px;
+
+    font-weight:900;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.category-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.category-box {
+
+    height:250px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+
+
+.category-box img {
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+
+
+.category-box:hover img {
+
+    transform:scale(1.1);
+
+}
+
+
+
+.category-name {
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    padding:20px;
+
+    background:linear-gradient(
+    transparent,
+    rgba(0,0,0,.8)
+    );
+
+    color:white;
+
+    font-size:25px;
+
+    font-weight:900;
+
+}
+
+
+
+
+/* ================================
+   CATALOGO PREMIUM $700+
+================================ */
+
+
+.premium-section {
+
+
+    background:#111;
+
+    color:white;
+
+    padding:80px 8%;
+
+}
+
+
+
+.premium-title {
+
+    text-align:center;
+
+    font-size:45px;
+
+    font-weight:900;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.premium-card {
+
+
+    background:#1c1c1c;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+
+
+.premium-card:hover {
+
+    transform:translateY(-12px);
+
+}
+
+
+
+.premium-card img {
+
+
+    height:320px;
+
+    width:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+.premium-content {
+
+    padding:25px;
+
+}
+
+
+
+.premium-content h3 {
+
+    font-size:24px;
+
+}
+
+
+
+.premium-price {
+
+    font-size:28px;
+
+    font-weight:900;
+
+    color:#fff;
+
+    margin:15px 0;
+
+}
+
+
+
+.premium-btn {
+
+
+    background:white;
+
+    color:black;
+
+    padding:13px 30px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    display:inline-block;
+
+}
+
+
+
+.premium-btn:hover {
+
+    background:#e63946;
+
+    color:white;
+
+}
+/* ================================
+   CARRITO DE COMPRAS
+================================ */
+
+
+.cart-container {
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+
+
+.cart-icon {
+
+    font-size:28px;
+
+    color:white;
+
+}
+
+
+
+.cart-count {
+
+
+    position:absolute;
+
+    top:-10px;
+
+    right:-12px;
+
+    background:#e63946;
+
+    color:white;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+}
+
+
+
+/* Panel carrito */
+
+.cart-panel {
+
+
+    position:fixed;
+
+    right:-400px;
+
+    top:0;
+
+    width:350px;
+
+    height:100vh;
+
+    background:white;
+
+    z-index:999;
+
+    padding:30px;
+
+    transition:.5s;
+
+    box-shadow:-10px 0 30px rgba(0,0,0,.2);
+
+}
+
+
+
+.cart-panel.active {
+
+    right:0;
+
+}
+
+
+
+.cart-panel h2 {
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.cart-item {
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+    border-bottom:1px solid #ddd;
+
+    padding-bottom:15px;
+
+}
+
+
+
+.cart-item img {
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:10px;
+
+    object-fit:cover;
+
+}
+
+
+
+.cart-total {
+
+
+    font-size:25px;
+
+    font-weight:900;
+
+    margin-top:30px;
+
+}
+
+
+
+.checkout-btn {
+
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    background:#000;
+
+    color:white;
+
+    font-weight:bold;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    margin-top:20px;
+
+}
+
+
+
+.checkout-btn:hover {
+
+    background:#e63946;
+
+}
+
+
+
+
+/* ================================
+   BUSCADOR
+================================ */
+
+
+.search-box {
+
+
+    display:flex;
+
+    align-items:center;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:8px 20px;
+
+}
+
+
+
+.search-box input {
+
+
+    border:none;
+
+    outline:none;
+
+    width:250px;
+
+    font-size:15px;
+
+}
+
+
+
+.search-btn {
+
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+}
+
+
+
+
+
+/* ================================
+   LOGIN / PERFIL
+================================ */
+
+
+.user-area {
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+.user-icon {
+
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:black;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+}
+
+
+
+.login-btn {
+
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:black;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+.login-btn:hover {
+
+
+    background:#e63946;
+
+    color:white;
+
+}
+
+
+
+
+
+/* ================================
+   ANIMACIONES PREMIUM
+================================ */
+
+
+.fade-in {
+
+
+    animation:fadeIn 1s ease;
+
+}
+
+
+
+@keyframes fadeIn {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+.slide-left {
+
+
+    animation:slideLeft 1s ease;
+
+}
+
+
+
+@keyframes slideLeft {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateX(-50px);
+
+    }
+
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+
+}
+
+
+
+
+/* ================================
+   FOOTER
+================================ */
+
+
+footer {
+
+
+    background:#000;
+
+    color:white;
+
+    padding:60px 8% 30px;
+
+}
+
+
+
+.footer-container {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:40px;
+
+}
+
+
+
+.footer-column h3 {
+
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.footer-column a {
+
+
+    display:block;
+
+    color:#bbb;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+
+
+.footer-column a:hover {
+
+
+    color:white;
+
+    transform:translateX(5px);
+
+}
+
+
+
+.social-icons {
+
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+
+.social-icons a {
+
+
+    width:40px;
+
+    height:40px;
+
+    background:white;
+
+    color:black;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+}
+
+
+
+.copyright {
+
+
+    text-align:center;
+
+    border-top:1px solid #333;
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    color:#aaa;
+
+}
+
+
+
+
+/* ================================
+   RESPONSIVE MOBILE
+================================ */
+
+
+@media(max-width:768px){
+
+
+
+    .menu {
+
+
+        display:none;
+
+    }
+
+
+
+    .search-box input {
+
+
+        width:120px;
+
+    }
+
+
+
+    .products-container {
+
+
+        grid-template-columns:1fr;
+
+        padding:20px;
+
+    }
+
+
+
+    .premium-title {
+
+
+        font-size:32px;
+
+    }
+
+
+
+    .categories h2 {
+
+
+        font-size:30px;
+
+    }
+
+
+
+    .cart-panel {
+
+
+        width:100%;
+
+    }
+
+
+
+    .hero h1 {
+
+
+        font-size:40px;
+
+    }
+
+
+
+}
+/* ================================
+   HERO PREMIUM
+================================ */
+
+
+.hero {
+
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(
+
+    rgba(0,0,0,.6),
+
+    rgba(0,0,0,.8)
+
+    ),
+
+    url("../img/banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+.hero-content {
+
+
+    color:white;
+
+    max-width:900px;
+
+    animation:heroAnimation 1.2s ease;
+
+}
+
+
+
+.hero h1 {
+
+
+    font-size:80px;
+
+    font-weight:1000;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+}
+
+
+
+.hero p {
+
+
+    font-size:22px;
+
+    margin:25px 0;
+
+    color:#ddd;
+
+}
+
+
+
+.hero-btn {
+
+
+    display:inline-block;
+
+    padding:18px 45px;
+
+    background:white;
+
+    color:black;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+
+.hero-btn:hover {
+
+
+    background:#e63946;
+
+    color:white;
+
+    transform:scale(1.08);
+
+}
+
+
+
+@keyframes heroAnimation {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* ================================
+   OFERTAS FLASH
+================================ */
+
+
+.flash-section {
+
+
+    padding:70px 8%;
+
+    background:#f5f5f5;
+
+}
+
+
+
+.flash-title {
+
+
+    text-align:center;
+
+    font-size:45px;
+
+    font-weight:900;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.flash-container {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.flash-card {
+
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+
+
+.flash-card:hover {
+
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.discount {
+
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    background:#e63946;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+.old-price {
+
+
+    text-decoration:line-through;
+
+    color:#999;
+
+    font-size:18px;
+
+}
+
+
+
+.new-price {
+
+
+    font-size:30px;
+
+    font-weight:900;
+
+}
+
+
+
+
+
+/* ================================
+   REVIEWS CLIENTES
+================================ */
+
+
+.reviews {
+
+
+    padding:80px 8%;
+
+    background:white;
+
+}
+
+
+
+.review-title {
+
+
+    text-align:center;
+
+    font-size:45px;
+
+    font-weight:900;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.review-grid {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.review-card {
+
+
+    background:#f8f8f8;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    transition:.3s;
+
+}
+
+
+
+.review-card:hover {
+
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.stars {
+
+
+    color:#ffb703;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.customer {
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+
+
+.customer img {
+
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+/* ================================
+   BENEFICIOS / SERVICIOS
+================================ */
+
+
+.services {
+
+
+    background:#111;
+
+    color:white;
+
+    padding:70px 8%;
+
+}
+
+
+
+.service-grid {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.service-box {
+
+
+    text-align:center;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:#1d1d1d;
+
+    transition:.3s;
+
+}
+
+
+
+.service-box:hover {
+
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.service-icon {
+
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.service-box h3 {
+
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.service-box p {
+
+
+    color:#bbb;
+
+}
+
+
+
+
+
+/* ================================
+   BANNER PROMOCIONAL
+================================ */
+
+
+.promo-banner {
+
+
+    margin:70px 8%;
+
+    padding:70px 40px;
+
+    border-radius:30px;
+
+    background:
+
+    linear-gradient(
+
+    120deg,
+
+    #000,
+
+    #333
+
+    );
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+.promo-banner h2 {
+
+
+    font-size:55px;
+
+    font-weight:1000;
+
+}
+
+
+
+.promo-banner span {
+
+
+    color:#e63946;
+
+}
+
+
+
+.promo-banner p {
+
+
+    font-size:20px;
+
+    margin:20px 0;
+
+}
+
+
+
+
+
+/* ================================
+   EFECTO SCROLL PREMIUM
+================================ */
+
+
+.reveal {
+
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
+
+}
+
+
+
+.reveal.active {
+
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+
+
+/* ================================
+   AJUSTES FINALES
+================================ */
+
+
+::selection {
+
+
+    background:#000;
+
+    color:white;
+
+}
+
+
+
+html {
+
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body {
+
+
+    overflow-x:hidden;
+
+}
+
+
+
+
+
+/* MOBILE HERO */
+
+@media(max-width:768px){
+
+
+.hero h1{
+
+
+    font-size:42px;
+
+}
+
+
+.hero p{
+
+
+    font-size:17px;
+
+}
+
+
+.promo-banner h2{
+
+
+    font-size:35px;
+
+}
+
+
+}
