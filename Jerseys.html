@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cruz Jersey Jalapa Tab</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* HEADER */
+
+header{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* BANNER */
+
+.banner{
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1556056504-5c7696c4c28d?auto=format&fit=crop&w=1400&q=80');
+    background-size:cover;
+    background-position:center;
+    height:350px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.banner h2{
+    font-size:3rem;
+}
+
+/* TITULOS */
+
+.titulo{
+    text-align:center;
+    margin:40px 0;
+    color:#0d47a1;
+}
+
+/* CATALOGO */
+
+.catalogo{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.info{
+    padding:20px;
+}
+
+.info h3{
+    color:#0d47a1;
+}
+
+.precio{
+    color:green;
+    font-size:1.4rem;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.btn{
+    display:block;
+    text-align:center;
+    background:#0d47a1;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+
+    background:#25D366;
+    color:white;
+
+    text-decoration:none;
+    padding:15px 20px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>⚽ Cruz Jersey Jalapa Tab ⚽</h1>
+    <p>Venta de Jerseys Nacionales e Internacionales</p>
+</header>
+
+<section class="banner">
+    <div>
+        <h2>Viste los colores de tu equipo</h2>
+        <p>Calidad y pasión futbolera</p>
+    </div>
+</section>
+
+<h2 class="titulo">Catálogo Disponible</h2>
+
+<section class="catalogo">
+
+    <div class="card">
+        <img src="https://picsum.photos/400/500?1">
+        <div class="info">
+            <h3>Club América Local</h3>
+            <div class="precio">$850 MXN</div>
+
+            <a
+            class="btn"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20del%20América"
+            target="_blank">
+            Solicitar
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/500?2">
+        <div class="info">
+            <h3>Cruz Azul Local</h3>
+            <div class="precio">$850 MXN</div>
+
+            <a
+            class="btn"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20de%20Cruz%20Azul"
+            target="_blank">
+            Solicitar
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/500?3">
+        <div class="info">
+            <h3>Real Madrid Home</h3>
+            <div class="precio">$950 MXN</div>
+
+            <a
+            class="btn"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20del%20Real%20Madrid"
+            target="_blank">
+            Solicitar
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/500?4">
+        <div class="info">
+            <h3>FC Barcelona</h3>
+            <div class="precio">$950 MXN</div>
+
+            <a
+            class="btn"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20del%20Barcelona"
+            target="_blank">
+            Solicitar
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/500?5">
+        <div class="info">
+            <h3>Selección Mexicana</h3>
+            <div class="precio">$900 MXN</div>
+
+            <a
+            class="btn"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20de%20México"
+            target="_blank">
+            Solicitar
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/500?6">
+        <div class="info">
+            <h3>Argentina Campeón</h3>
+            <div class="precio">$950 MXN</div>
+
+            <a
+            class="btn"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20de%20Argentina"
+            target="_blank">
+            Solicitar
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <h3>Cruz Jersey Jalapa Tab</h3>
+    <p>📍 Jalapa, Tabasco</p>
+    <p>📱 WhatsApp: 56 6400 9452</p>
+</footer>
+
+<a
+class="whatsapp"
+href="https://wa.me/525664009452?text=Hola,%20vi%20tu%20catálogo%20de%20jerseys"
+target="_blank">
+💬 WhatsApp
+</a>
+
+</body>
+</html>
