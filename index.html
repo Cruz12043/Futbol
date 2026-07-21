@@ -1,280 +1,1020 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Cruz Jersey Jalapa Tab</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-body{
-    background:#f5f5f5;
-}
-
-/* HEADER */
-
-header{
-    background:#0d47a1;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
-
-header h1{
-    font-size:3rem;
-}
-
-header p{
-    margin-top:10px;
-}
-
-/* BANNER */
-
-.banner{
-    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-    url('https://images.unsplash.com/photo-1556056504-5c7696c4c28d?auto=format&fit=crop&w=1400&q=80');
-    background-size:cover;
-    background-position:center;
-    height:350px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    color:white;
-    text-align:center;
-}
-
-.banner h2{
-    font-size:3rem;
-}
-
-/* TITULOS */
-
-.titulo{
-    text-align:center;
-    margin:40px 0;
-    color:#0d47a1;
-}
-
-/* CATALOGO */
-
-.catalogo{
-    max-width:1200px;
-    margin:auto;
-    padding:20px;
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 4px 10px rgba(0,0,0,.15);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-}
-
-.info{
-    padding:20px;
-}
-
-.info h3{
-    color:#0d47a1;
-}
-
-.precio{
-    color:green;
-    font-size:1.4rem;
-    font-weight:bold;
-    margin:15px 0;
-}
-
-.btn{
-    display:block;
-    text-align:center;
-    background:#0d47a1;
-    color:white;
-    text-decoration:none;
-    padding:12px;
-    border-radius:8px;
-}
-
-/* FOOTER */
-
-footer{
-    background:#0d47a1;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:50px;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-
-    background:#25D366;
-    color:white;
-
-    text-decoration:none;
-    padding:15px 20px;
-
-    border-radius:50px;
-
-    font-weight:bold;
-
-    box-shadow:0 4px 10px rgba(0,0,0,.3);
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
+<!--======================
+HEADER
+=======================-->
+
 <header>
-    <h1>⚽ Cruz Jersey Jalapa Tab ⚽</h1>
-    <p>Venta de Jerseys Nacionales e Internacionales</p>
-</header>
 
-<section class="banner">
-    <div>
-        <h2>Viste los colores de tu equipo</h2>
-        <p>Calidad y pasión futbolera</p>
-    </div>
-</section>
+<div class="logo">
 
-<h2 class="titulo">Catálogo Disponible</h2>
+⚽ Cruz Jersey
 
-<section class="catalogo">
+<span>Jalapa Tab</span>
 
-    <div class="card">
-        <img src="https://picsum.photos/400/500?1">
-        <div class="info">
-            <h3>Club América Local</h3>
-            <div class="precio">$850 MXN</div>
+</div>
 
-            <a
-            class="btn"
-            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20del%20América"
-            target="_blank">
-            Solicitar
-            </a>
-        </div>
-    </div>
+<nav>
 
-    <div class="card">
-        <img src="https://picsum.photos/400/500?2">
-        <div class="info">
-            <h3>Cruz Azul Local</h3>
-            <div class="precio">$850 MXN</div>
+<ul>
 
-            <a
-            class="btn"
-            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20de%20Cruz%20Azul"
-            target="_blank">
-            Solicitar
-            </a>
-        </div>
-    </div>
+<li><a href="#inicio">Inicio</a></li>
 
-    <div class="card">
-        <img src="https://picsum.photos/400/500?3">
-        <div class="info">
-            <h3>Real Madrid Home</h3>
-            <div class="precio">$950 MXN</div>
+<li><a href="#premium">Premium</a></li>
 
-            <a
-            class="btn"
-            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20del%20Real%20Madrid"
-            target="_blank">
-            Solicitar
-            </a>
-        </div>
-    </div>
+<li><a href="#economico">Calidad A</a></li>
 
-    <div class="card">
-        <img src="https://picsum.photos/400/500?4">
-        <div class="info">
-            <h3>FC Barcelona</h3>
-            <div class="precio">$950 MXN</div>
+<li><a href="#selecciones">Selecciones</a></li>
 
-            <a
-            class="btn"
-            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20del%20Barcelona"
-            target="_blank">
-            Solicitar
-            </a>
-        </div>
-    </div>
+<li><a href="#originales">Originales</a></li>
 
-    <div class="card">
-        <img src="https://picsum.photos/400/500?5">
-        <div class="info">
-            <h3>Selección Mexicana</h3>
-            <div class="precio">$900 MXN</div>
+<li><a href="#contacto">Contacto</a></li>
 
-            <a
-            class="btn"
-            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20de%20México"
-            target="_blank">
-            Solicitar
-            </a>
-        </div>
-    </div>
+</ul>
 
-    <div class="card">
-        <img src="https://picsum.photos/400/500?6">
-        <div class="info">
-            <h3>Argentina Campeón</h3>
-            <div class="precio">$950 MXN</div>
-
-            <a
-            class="btn"
-            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20de%20Argentina"
-            target="_blank">
-            Solicitar
-            </a>
-        </div>
-    </div>
-
-</section>
-
-<footer>
-    <h3>Cruz Jersey Jalapa Tab</h3>
-    <p>📍 Jalapa, Tabasco</p>
-    <p>📱 WhatsApp: 56 6400 9452</p>
-</footer>
+</nav>
 
 <a
-class="whatsapp"
-href="https://wa.me/525664009452?text=Hola,%20vi%20tu%20catálogo%20de%20jerseys"
-target="_blank">
-💬 WhatsApp
+class="btnHeader"
+target="_blank"
+href="https://wa.me/525664009452?text=Hola,%20vi%20tu%20catálogo">
+WhatsApp
 </a>
 
+</header>
+
+<!--======================
+HERO
+=======================-->
+
+<section id="inicio" class="hero">
+
+<div class="overlay"></div>
+
+<div class="contenidoHero">
+
+<h1>
+
+La pasión por el fútbol<br>
+
+comienza con tu jersey.
+
+</h1>
+
+<p>
+
+Las mejores jerseys nacionales e internacionales.
+
+Versiones Premium, Calidad A y Originales.
+
+</p>
+
+<div class="botonesHero">
+
+<a href="#premium" class="btnPrincipal">
+
+Ver Catálogo
+
+</a>
+
+<a
+target="_blank"
+href="https://wa.me/525664009452?text=Hola,%20quiero%20información"
+class="btnSecundario">
+
+Contactar
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================
+BUSCADOR
+=======================-->
+
+<section class="buscador">
+
+<h2>
+
+Encuentra tu equipo favorito
+
+</h2>
+
+<input
+
+type="text"
+
+id="buscar"
+
+placeholder="Buscar Real Madrid, América, Argentina..."
+
+>
+
+</section>
+
+<!--======================
+CATEGORIAS
+=======================-->
+
+<section class="categorias">
+
+<button class="activo">
+
+Todos
+
+</button>
+
+<button>
+
+Premium
+
+</button>
+
+<button>
+
+Calidad A
+
+</button>
+
+<button>
+
+Europa
+
+</button>
+
+<button>
+
+Liga MX
+
+</button>
+
+<button>
+
+Selecciones
+
+</button>
+
+</section>
+
+<!--======================
+PREMIUM
+=======================-->
+
+<section id="premium" class="catalogo">
+
+<div class="tituloSeccion">
+
+<h2>
+
+⭐ Catálogo Premium
+
+</h2>
+
+<p>
+
+Versión Premium
+
+Tela Dri-Fit
+
+Parches
+
+Escudos Bordados
+
+Ideal para colección.
+
+</p>
+
+<h3>
+
+💲 Todas a $700 MXN
+
+</h3>
+
+</div>
+
+<div class="productos">
+
+<!-- Madrid -->
+
+<div class="card">
+
+<img src="img/madrid.jpg">
+
+<h3>
+
+Real Madrid
+
+</h3>
+
+<p>
+
+Temporada 2025/26
+
+</p>
+
+<span>
+
+$700
+
+</span>
+
+<a
+
+target="_blank"
+
+href="https://wa.me/525664009452?text=Hola,%20quiero%20la%20Jersey%20Premium%20del%20Real%20Madrid">
+
+Pedir
+
+</a>
+
+</div>
+
+<!-- Barcelona -->
+
+<div class="card">
+
+<img src="img/barcelona.jpg">
+
+<h3>
+
+Barcelona
+
+</h3>
+
+<p>
+
+Temporada 2025/26
+
+</p>
+
+<span>
+
+$700
+
+</span>
+
+<a
+
+target="_blank"
+
+href="https://wa.me/525664009452?text=Hola,%20quiero%20la%20Jersey%20Premium%20del%20Barcelona">
+
+Pedir
+
+</a>
+
+</div>
+
+<!-- Manchester -->
+
+<div class="card">
+
+<img src="img/city.jpg">
+
+<h3>
+
+Manchester City
+
+</h3>
+
+<p>
+
+Temporada 2025/26
+
+</p>
+
+<span>
+
+$700
+
+</span>
+
+<a
+
+target="_blank"
+
+href="https://wa.me/525664009452?text=Hola,%20quiero%20la%20Jersey%20Premium%20del%20Manchester%20City">
+
+Pedir
+
+</a>
+
+</div>
+
+<!-- PSG -->
+
+<div class="card">
+
+<img src="img/psg.jpg">
+
+<h3>
+
+PSG
+
+</h3>
+
+<p>
+
+Temporada 2025/26
+
+</p>
+
+<span>
+
+$700
+
+</span>
+
+<a
+
+target="_blank"
+
+href="https://wa.me/525664009452?text=Hola,%20quiero%20la%20Jersey%20Premium%20del%20PSG">
+
+Pedir
+
+</a>
+
+</div>
+
+<!-- Liverpool -->
+
+<div class="card">
+
+<img src="img/liverpool.jpg">
+
+<h3>
+
+Liverpool
+
+</h3>
+
+<p>
+
+Temporada 2025/26
+
+</p>
+
+<span>
+
+$700
+
+</span>
+
+<a
+
+target="_blank"
+
+href="https://wa.me/525664009452?text=Hola,%20quiero%20la%20Jersey%20Premium%20del%20Liverpool">
+
+Pedir
+
+</a>
+
+</div>
+
+<!-- Bayern -->
+
+<div class="card">
+
+<img src="img/bayern.jpg">
+
+<h3>
+
+Bayern Munich
+
+</h3>
+
+<p>
+
+Temporada 2025/26
+
+</p>
+
+<span>
+
+$700
+
+</span>
+
+<a
+
+target="_blank"
+
+href="https://wa.me/525664009452?text=Hola,%20quiero%20la%20Jersey%20Premium%20del%20Bayern">
+
+Pedir
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+    <!--=========================================
+CATÁLOGO CALIDAD A
+==========================================-->
+
+<section id="economico" class="catalogo">
+
+    <div class="tituloSeccion">
+
+        <h2>💲 Catálogo Calidad A</h2>
+
+        <p>
+
+            La mejor opción calidad-precio.
+
+            Excelente tela, excelente acabado,
+
+            ideal para uso diario.
+
+        </p>
+
+        <h3>
+
+            Todas a $280 MXN
+
+        </h3>
+
+    </div>
+
+    <div class="productos">
+
+        <div class="card">
+
+            <img src="img/madrid.jpg">
+
+            <h3>Real Madrid</h3>
+
+            <p>Calidad A</p>
+
+            <span>$280</span>
+
+            <a target="_blank"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20Real%20Madrid%20Calidad%20A">
+
+            Pedir
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/barcelona.jpg">
+
+            <h3>Barcelona</h3>
+
+            <p>Calidad A</p>
+
+            <span>$280</span>
+
+            <a target="_blank"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20Barcelona%20Calidad%20A">
+
+            Pedir
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/city.jpg">
+
+            <h3>Manchester City</h3>
+
+            <p>Calidad A</p>
+
+            <span>$280</span>
+
+            <a target="_blank"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20Manchester%20City">
+
+            Pedir
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/psg.jpg">
+
+            <h3>PSG</h3>
+
+            <p>Calidad A</p>
+
+            <span>$280</span>
+
+            <a target="_blank"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20PSG">
+
+            Pedir
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/liverpool.jpg">
+
+            <h3>Liverpool</h3>
+
+            <p>Calidad A</p>
+
+            <span>$280</span>
+
+            <a target="_blank"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20Liverpool">
+
+            Pedir
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/bayern.jpg">
+
+            <h3>Bayern Munich</h3>
+
+            <p>Calidad A</p>
+
+            <span>$280</span>
+
+            <a target="_blank"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20Bayern">
+
+            Pedir
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+SELECCIONES
+==========================================-->
+
+<section id="selecciones" class="selecciones">
+
+    <div class="tituloSeccion">
+
+        <h2>🌎 Selecciones Nacionales</h2>
+
+        <p>
+
+            Tenemos disponibles las principales selecciones del mundo
+            en versión Premium y Calidad A.
+
+        </p>
+
+    </div>
+
+    <div class="productos">
+
+        <div class="card">
+
+            <img src="img/mexico.jpg">
+
+            <h3>México</h3>
+
+            <p>Premium $700 | Calidad A $280</p>
+
+            <a target="_blank"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20de%20México">
+
+            Consultar
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/argentina.jpg">
+
+            <h3>Argentina</h3>
+
+            <p>Premium $700 | Calidad A $280</p>
+
+            <a target="_blank"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20de%20Argentina">
+
+            Consultar
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/brasil.jpg">
+
+            <h3>Brasil</h3>
+
+            <p>Premium $700 | Calidad A $280</p>
+
+            <a target="_blank"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20de%20Brasil">
+
+            Consultar
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/francia.jpg">
+
+            <h3>Francia</h3>
+
+            <p>Premium $700 | Calidad A $280</p>
+
+            <a target="_blank"
+            href="https://wa.me/525664009452?text=Hola,%20me%20interesa%20la%20Jersey%20de%20Francia">
+
+            Consultar
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+JERSEYS ORIGINALES
+==========================================-->
+
+<section id="originales" class="originales">
+
+    <div class="contenidoOriginal">
+
+        <h2>
+
+            ⭐ ¿Buscas Jerseys Originales?
+
+        </h2>
+
+        <p>
+
+            También manejamos jerseys originales de marcas como
+            <strong>Nike</strong>,
+            <strong>Adidas</strong>,
+            <strong>Puma</strong>,
+            <strong>New Balance</strong> y más.
+
+        </p>
+
+        <p>
+
+            Debido a la disponibilidad y cambios de precio,
+            las jerseys originales se cotizan directamente por WhatsApp.
+
+        </p>
+
+        <a
+
+        target="_blank"
+
+        class="btnOriginal"
+
+        href="https://wa.me/525664009452?text=Hola,%20me%20interesan%20las%20Jerseys%20Originales">
+
+        Consultar Originales
+
+        </a>
+
+    </div>
+
+</section>
+
+<!--=========================================
+VENTAJAS
+==========================================-->
+
+<section class="beneficios">
+
+    <div class="beneficio">
+
+        🚚
+
+        <h3>Envíos</h3>
+
+        <p>
+
+            Envíos a todo México.
+
+        </p>
+
+    </div>
+
+    <div class="beneficio">
+
+        👕
+
+        <h3>Todas las tallas</h3>
+
+        <p>
+
+            Infantil, Juvenil y Adulto.
+
+        </p>
+
+    </div>
+
+    <div class="beneficio">
+
+        ✍️
+
+        <h3>Personalización</h3>
+
+        <p>
+
+            Nombre y número disponibles.
+
+        </p>
+
+    </div>
+
+    <div class="beneficio">
+
+        ⭐
+
+        <h3>Calidad garantizada</h3>
+
+        <p>
+
+            Productos cuidadosamente seleccionados.
+
+        </p>
+
+    </div>
+
+</section>
+
+    <!--=========================================
+TESTIMONIOS
+==========================================-->
+
+<section class="testimonios">
+
+    <div class="tituloSeccion">
+
+        <h2>⭐ Lo que dicen nuestros clientes</h2>
+
+        <p>
+            Gracias por confiar en Cruz Jersey Jalapa Tab.
+        </p>
+
+    </div>
+
+    <div class="contenedorTestimonios">
+
+        <div class="testimonio">
+
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+
+                Excelente calidad.
+                La jersey llegó muy rápido y quedó perfecta.
+
+            </p>
+
+            <span>- Cliente de Tabasco</span>
+
+        </div>
+
+        <div class="testimonio">
+
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+
+                Muy buena atención por WhatsApp.
+                Compraré nuevamente.
+
+            </p>
+
+            <span>- Cliente de Veracruz</span>
+
+        </div>
+
+        <div class="testimonio">
+
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+
+                La Premium vale totalmente la pena.
+                Muy recomendada.
+
+            </p>
+
+            <span>- Cliente de CDMX</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+CONTACTO
+==========================================-->
+
+<section id="contacto" class="contacto">
+
+    <div class="contactoInfo">
+
+        <h2>📲 Contacto</h2>
+
+        <p>
+
+            ¿Buscas alguna jersey que no aparece en el catálogo?
+
+        </p>
+
+        <p>
+
+            Escríbenos por WhatsApp y con gusto revisamos disponibilidad.
+
+        </p>
+
+        <a
+        class="btnContacto"
+        target="_blank"
+        href="https://wa.me/525664009452?text=Hola,%20vi%20tu%20catálogo%20y%20quiero%20más%20información">
+
+        Enviar WhatsApp
+
+        </a>
+
+    </div>
+
+</section>
+
+<!--=========================================
+FOOTER
+==========================================-->
+
+<footer>
+
+<div class="footerContenido">
+
+<div>
+
+<h2>
+
+⚽ Cruz Jersey Jalapa Tab
+
+</h2>
+
+<p>
+
+La pasión por el fútbol comienza aquí.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Categorías
+
+</h3>
+
+<ul>
+
+<li>Premium</li>
+
+<li>Calidad A</li>
+
+<li>Selecciones</li>
+
+<li>Originales</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>
+
+Contacto
+
+</h3>
+
+<p>
+
+📍 Jalapa, Tabasco
+
+</p>
+
+<p>
+
+📲 WhatsApp
+
+56 6400 9452
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Síguenos
+
+</h3>
+
+<a href="#">Facebook</a><br>
+
+<a href="#">Instagram</a><br>
+
+<a href="#">TikTok</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copy">
+
+© 2026 Cruz Jersey Jalapa Tab
+
+Todos los derechos reservados.
+
+</p>
+
+</footer>
+
+<!--=========================================
+BOTÓN WHATSAPP
+==========================================-->
+
+<a
+
+class="whatsapp"
+
+target="_blank"
+
+href="https://wa.me/525664009452?text=Hola,%20vi%20tu%20catálogo%20de%20jerseys">
+
+<img
+
+src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+
+alt="WhatsApp"
+
+>
+
+</a>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
