@@ -2149,3 +2149,66 @@ body {
     height: 250px;
     object-fit: cover;
 }
+
+/* =========================
+   RESPONSIVE MOVILES
+========================= */
+@media (max-width: 768px) {
+
+    /* Header */
+    .header,
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    /* Banner principal */
+    .hero {
+        height: auto;
+        min-height: 300px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Filtros */
+    .filters {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .filters button {
+        width: calc(50% - 8px);
+    }
+
+    /* Productos */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .product-card img {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    /* Títulos */
+    .section-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
