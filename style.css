@@ -2222,3 +2222,28 @@ body {
         text-align: center;
     }
 }
+@media (max-width:768px){
+
+    nav{
+        width:100%;
+        overflow-x:auto;
+    }
+
+    nav ul{
+        display:flex;
+        flex-wrap:nowrap;
+        gap:15px;
+        padding:0 10px;
+        width:max-content;
+    }
+
+    nav ul::-webkit-scrollbar{
+        display:none;
+    }
+
+    nav ul li a{
+        white-space:nowrap;
+        font-size:14px;
+    }
+
+}
