@@ -2180,16 +2180,26 @@ body {
         font-size: 1rem;
     }
 
-    /* Filtros */
-    .filters {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-    }
+   /* Filtros móviles */
+.filters {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+    -webkit-overflow-scrolling: touch;
+}
 
-    .filters button {
-        width: calc(50% - 8px);
-    }
+.filters::-webkit-scrollbar {
+    display: none;
+}
+
+.filters button {
+    flex: 0 0 auto;
+    width: auto;
+    white-space: nowrap;
+}
 
     /* Productos */
     .products-grid {
